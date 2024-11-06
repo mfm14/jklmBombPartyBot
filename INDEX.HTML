@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jklm.fun bombparty bot</title>
+    <link rel="stylesheet" href="STYEL.CSS">
+</head>
+<body>
+    <div class="background">
+        <input style="font-size: 20pt; cursor: pointer;" class="syllable" data-syllable>
+        <br>
+        <button style="margin-top: 10px; font-size: 25pt; cursor: pointer;" data-request class="submit">Get word</button>
+        <br>
+        <h1 style="font-size: 25pt; font-family: sans-serif;" data-display class="display">Word is: </h1>
+        <br>
+        <h1 style="font-size: 22pt; font-family: sans-serif; color: rgb(200, 200, 200); transition: 0.5s; opacity: 0;" data-maxLength>(Max Word Length)</h1>
+        <br>
+        <h1 style="font-size: 22pt; font-family: sans-serif; color: rgb(200, 200, 200); transition: 0.5s; opacity: 0;" data-onlyHyphens>(Only Hyphens)</h1>
+        <script src="INDEX.JS"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyBWgXatkvz_MyBGWRWBmEusUZOZJDxErRM",
+              authDomain: "answers-jklm.firebaseapp.com",
+              projectId: "answers-jklm",
+              storageBucket: "answers-jklm.firebasestorage.app",
+              messagingSenderId: "292746019051",
+              appId: "1:292746019051:web:62efc4244e33581b8bfeae",
+              measurementId: "G-1YSG32CY1B"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+    </div>
+</body>
+</html>

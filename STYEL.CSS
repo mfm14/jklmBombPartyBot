@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+body {
+    background: rgb(133,126,255);
+    background: linear-gradient(135deg, rgba(133,126,255,1) 0%, rgba(0,0,255,1) 50%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.background {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 8px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+    padding: 25px;
+}
+
+.syllable {
+    text-align: center;
+}
+
+.submit {
+    width: 200px;
+    border: 3px solid white;
+    color: white;
+    background: none;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.submit:hover {
+    filter: brightness(0.7);
+}
+
+.submit:active{
+    transition: 0.2s;
+    transform: translateY(5px);
+}
+
+.display {
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+    color: white;
+    word-break: break-all;
+    word-wrap: break-word;
+}
